@@ -1,2 +1,2 @@
-# puballiance.github.io
-Website
+# PuB Alliance Website
+Feel free to contribute!

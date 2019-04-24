@@ -11,24 +11,28 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
+<!-- ro-it-ni-ci-ab -->
 
 <body data-spy="scroll" data-target="#nav-bar">
+    <div id="mdb-preloader" class="flex-center">
+        <div id="preloader-markup">
+        </div>
+    </div>
     <nav id="nav-bar" class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
         <a class="navbar-brand" href="#"><strong>PuB Alliance</strong></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home
-                        <!-- <span class="sr-only">(current)</span> --></a>
+            <ul class="navbar-nav ml-auto smooth-scroll">
+                <li class="nav-item">
+                    <a class="nav-link" href="#nav-home">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#nav-about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#nav-harvest">Harvest</a>
+                    <a class="nav-link" href="#nav-harvest">Event</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#nav-contact">Contact</a>
@@ -37,6 +41,7 @@
         </div>
     </nav>
     <main>
+        <div id="nav-home" class="d-none"></div>
         <div class="view jarallax" style="height: 100vh;">
             <img class="jarallax-img lazyload" data-src="img/bg.jpg">
             <div class="mask pattern-9 flex-center">
@@ -44,7 +49,7 @@
                     <div data-jarallax-element="220" class="container flex-center text-center">
                         <div class="row mt-5">
                             <div class="col-md-12 wow fadeIn mb-3">
-                                <h1 class="display-3 mb-2 wow fadeInDown" data-wow-delay="0.3s" style="color:white;font-weight:800;">
+                                <h1 class="display-3 mb-2 wow fadeIn" data-wow-delay="0.3s" style="color:white;font-weight:800;">
                                     <img style="height:30vh" class="lazyload" data-src="img/WTPUB.png"></h1>
                             </div>
                         </div>
@@ -52,51 +57,99 @@
                 </div>
             </div>
         </div>
-        <div id="nav-about" class="container">
-            <div class="row mb-5 pb-4">
-                <div class="col-md-12 text-center">
-                    <h2 class="h1 font-weight-bold light-blue-text my-5 py-4">
-                        <span data-jarallax-element="-220">A</span>
-                        <span data-jarallax-element="-110">B</span>
-                        <span data-jarallax-element="0">O</span>
-                        <span data-jarallax-element="110">U</span>
-                        <span data-jarallax-element="220">T</span>
-                    </h2>
-                    <p align="justify">test</p>
+        <div class="jarallax about-page" style="height: 100vh;" data-jarallax-video="https://www.youtube.com/embed/UkeDo1LhUqQ">
+            <div id="nav-about" class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="my-5 py-5 wow fadeIn" data-wow-delay="0.3s">The PuB Alliance</h2>
+                    </div>
                 </div>
             </div>
         </div>
-        <div id="nav-harvest" class="jarallax" style="height: 100vh;" data-jarallax-video="https://www.youtube.com/embed/UkeDo1LhUqQ"></div>
-        <!-- <div class="view jarallax" style="height: 50vh;">
-            <img class="jarallax-img lazyload" data-src="http://mdbootstrap.com/img/Photos/Others/nature4.jpg" alt="">
-        </div> -->
-        <div id="nav-contact" class="container">
+        <div class="view jarallax harvest-page">
+            <img class="jarallax-img lazyload" data-src="img/harvest-bg.jpg" alt="">
+            <div id="nav-harvest" class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="my-5 py-5 wow fadeIn" data-wow-delay="0.3s">Beta Harvest</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="inner-container">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr class="b">
+                                            <th class="th-lg" scope="col"><b>Members</b></th>
+                                            <th class="th-lg" scope="col">ALEX 007</th>
+                                            <th class="th-lg" scope="col">MDH_itsHard</th>
+                                            <th class="th-lg" scope="col">DDD-DDD</th>
+                                            <th class="th-lg" scope="col">Duchess</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row"><b>PuBzFarm #</b></th>
+                                            <td>001</td>
+                                            <td>002</td>
+                                            <td>003</td>
+                                            <td>004</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table">
+                                    <thead>
+                                        <tr class="b">
+                                            <th class="th-lg" scope="col"><b>Members</b></th>
+                                            <th class="th-lg" scope="col">x-BossLady-x</th>
+                                            <th class="th-lg" scope="col">FighterY</th>
+                                            <th class="th-lg" scope="col">Oogi</th>
+                                            <th class="th-lg" scope="col">Chezzzzzz</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row"><b>PuBzFarm #</b></th>
+                                            <td>005</td>
+                                            <td>006</td>
+                                            <td>007</td>
+                                            <td>008</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="harvest-rules">
+                                <dl class="row">
+                                    <dt class="col-sm-3">Rules:</dt>
+                                    <dd class="col-sm-9">To be added soon...</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="nav-contact" class="container-fluid text-center contact-page" style="height: 92vh;">
             <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2 class="h1 font-weight-bold indigo-text my-5 py-4">Harvest</h2>
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <h5 class="text-uppercase font-weight-bold">Main Alliance</h5>
+                    <p>Alex</p>
+                </div>
+                <hr class="clearfix w-100 d-md-none pb-3">
+                <div class="col-md-6 mb-md-0 mb-3">
+                    <h5 class="text-uppercase font-weight-bold">Sub Alliance</h5>
+                    <p>Darth</p>
                 </div>
             </div>
         </div>
         <footer class="page-footer font-small pt-4">
-            <div class="container-fluid text-center text-md-left">
-                <div class="row">
-                    <div class="col-md-6 mt-md-0 mt-3">
-                        <h5 class="text-uppercase font-weight-bold">Main Alliance</h5>
-                        <p>Alex</p>
-                    </div>
-                    <hr class="clearfix w-100 d-md-none pb-3">
-                    <div class="col-md-6 mb-md-0 mb-3">
-                        <h5 class="text-uppercase font-weight-bold">Sub Alliance</h5>
-                        <p>Darth</p>
-                    </div>
-                </div>
-            </div>
             <div class="footer-copyright text-center py-3">© 2019 Copyright:
                 <a href="#">PuB Alliance</a>
             </div>
         </footer>
     </main>
-    <script src="lazysizes.min.js" async=""></script>
+    <script type="text/javascript" src="lazysizes.min.js" async></script>
     <script type="text/javascript" src="js/lazysizes.min.js"></script>
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
@@ -107,6 +160,25 @@
     <script type="text/javascript" src="js/jarallax/jarallax-video.min.js"></script>
     <script type="text/javascript" src="js/jarallax/jarallax-element.min.js"></script>
     <script type="text/javascript">
+    $(document).ready(function() {
+        $(".nav-link").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function() {
+                    window.location.hash = hash;
+                });
+            }
+        });
+    });
+    $(document).ready(function() {
+        $("body").attr("aria-busy", !0),
+            $("#preloader-markup").load("preload.html",
+                function() { $(window).on("load", function() { $("#mdb-preloader").fadeOut("slow"), $("body").removeAttr("aria-busy") }) })
+    });
+    new WOW().init();
     objectFitImages();
     jarallax(document.querySelectorAll('.jarallax'));
     jarallax(document.querySelectorAll('.jarallax-keep-img'), {

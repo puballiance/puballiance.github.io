@@ -98,7 +98,6 @@ h2 {
     font-size: 3rem;
 }
 
-
 .navbar-brand {
     font-family: 'Cinzel', serif !important;
     letter-spacing: 0.1rem;
@@ -146,6 +145,22 @@ h2 {
     .navbar {
         background-color: #000000bb;
     }
+}
+
+.spacer-1 {
+    height: 2rem;
+}
+.spacer-2 {
+    height: 4rem;
+}
+.spacer-3 {
+    height: 6rem;
+}
+.spacer-4 {
+    height: 8rem;
+}
+.spacer-5 {
+    height: 10rem;
 }
 
 .inner-container {

@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="full-height">
 
 <head>
     <meta charset="utf-8">
@@ -9,462 +8,126 @@
     <link href="public/css/addons/fontawesome.css" rel="stylesheet">
     <link href="public/css/bootstrap.min.css" rel="stylesheet">
     <link href="public/css/mdb.min.css" rel="stylesheet">
-    <link href="public/css/style.css" rel="stylesheet">
+    <style type="text/css">
+    @font-face {
+        font-family: 'Cinzel';
+        src: url('public/font/Cinzel/Cinzel-Black.ttf') format('truetype');
+        font-style: normal;
+        font-weight: 900;
+    }
+
+    @font-face {
+        font-family: 'Cinzel';
+        src: url('public/font/Cinzel/Cinzel-Bold.ttf') format('truetype');
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    @font-face {
+        font-family: 'Cinzel';
+        src: url('public/font/Cinzel/Cinzel-Regular.ttf') format('truetype');
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    @font-face {
+        font-family: 'ABeeZee';
+        src: url('public/font/ABeeZee/ABeeZee-Regular.ttf') format('truetype');
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    html,
+    body,
+    header,
+    .view {
+        height: 100%;
+        font-family: 'ABeeZee', sans-serif !important;
+    }
+
+    @media (max-width: 740px) {
+
+        html,
+        body,
+        header,
+        .view {
+            height: 100vh;
+        }
+    }
+
+    .top-nav-collapse {
+        background-color: #563e91 !important;
+    }
+
+    .navbar:not(.top-nav-collapse) {
+        background: transparent !important;
+    }
+
+    @media (max-width: 991px) {
+        .navbar:not(.top-nav-collapse) {
+            background: #563e91 !important;
+        }
+    }
+
+    .rgba-gradient {
+        background: -moz-linear-gradient(45deg, rgba(213, 15, 61, 0.6), rgba(13, 17, 198, 0.69) 100%);
+        background: -webkit-linear-gradient(45deg, rgba(213, 15, 61, 0.6), rgba(13, 17, 198, 0.69) 100%);
+        background: linear-gradient(to 45deg, rgba(213, 15, 61, 0.6), rgba(13, 17, 198, 0.69) 100%);
+    }
+
+    .navbar-brand {
+        font-family: 'Cinzel', serif !important;
+        letter-spacing: 0.1rem;
+        font-weight: 400;
+    }
+    </style>
 </head>
 
-<body data-spy="scroll" data-target="#nav-bar">
-    <!-- PRELOADER -->
-    <div id="mdb-preloader" class="flex-center">
-        <div id="preloader-markup">
-        </div>
-    </div>
-    <!-- NAVIGATION TOP BAR -->
-    <nav id="nav-bar" class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-        <a class="navbar-brand" href="#"><strong>PuB Alliance</strong></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto smooth-scroll">
-                <li class="nav-item">
-                    <a class="nav-link scrollTo" href="#nav-home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link scrollTo" href="#nav-about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link scrollTo" href="#nav-members">Members</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link scrollTo" href="#nav-allies">Allies</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link scrollTo" href="#nav-events">Events</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link scrollTo" href="#nav-contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <main>
-        <!-- HOME -->
-        <div id="nav-home" class="d-none"></div>
-        <div class="view jarallax" style="height: 100vh;">
-            <img class="jarallax-img lazyload" data-src="public/img/bg.jpg">
-            <div class="mask pattern-9 flex-center">
-                <div class="mask rgba-blue-slight">
-                    <div data-jarallax-element="220" class="container flex-center text-center">
-                        <div class="row mt-5">
-                            <div class="col-md-12 wow fadeIn mb-3">
-                                <h1 class="display-3 mb-2" style="color:white;font-weight:800;">
-                                    <img style="height:30vh" class="lazyload wow-in" data-wow-delay="1s" style="visibility: hidden;" data-src="public/img/WTPUB.png">
-                                </h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<body>
+    <!-- Main navigation -->
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#">PUB Alliance</a>
             </div>
-        </div>
-        <!-- ABOUT -->
-        <div class="view jarallax about-page" style="height: 100vh;">
-            <div id="nav-about" class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h2 class="my-5 py-5">Our Alliance</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 text-center">
-                        <img style="width: 100%" class="lazyload wow-in" data-wow-delay="0.3s" data-src="public/img/logo.png">
-                    </div>
-                    <div class="col-md-8 text-center">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Rules</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
-                            </li>
-                        </ul>
-                        <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Raw denim you
-                                probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master
-                                cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro
-                                keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip
-                                placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi
-                                qui.</div>
-                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Food truck fixie
-                                locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit,
-                                blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee.
-                                Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum
-                                PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS
-                                salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit,
-                                sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester
-                                stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</div>
-                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Etsy mixtape
-                                wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack
-                                lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard
-                                locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify
-                                squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie
-                                etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog
-                                stumptown. Pitchfork sustainable tofu synth chambray yr.</div>
+        </nav>
+        <!-- Navbar -->
+        <!-- Full Page Intro -->
+        <div class="view">
+            <video class="video-intro" poster="https://mdbootstrap.com/img/Photos/Others/background.jpg" playsinline autoplay muted loop>
+                <source src="https://mdbootstrap.com/img/video/animation.mp4" type="video/mp4">
+            </video>
+            <!-- Mask & flexbox options-->
+            <div class="mask rgba-gradient d-flex flex-center" style="height: 100vh;">
+                <!-- Content -->
+                <div class="container px-md-3 px-sm-0">
+                    <!--Grid row-->
+                    <div class="row wow fadeIn">
+                        <!--Grid column-->
+                        <div class="col-md-12 mb-4 white-text text-center wow fadeIn">
+                            <h3 class="display-3 font-weight-bold white-text mb-0 pt-md-5 pt-5">This site is under construction.</h3>
+                            <hr class="hr-light my-4 w-75">
+                            <h4 class="subtext-header mt-2 mb-4">If you are alliance member, check our new hive map for reference location. This is not the final map. We are porting bases in a progressive manner to fill in hole before everyone port. Thanks for your patience.</h4>
+                            <a href="map.png" class="btn btn-rounded btn-outline-white">
+                                <i class="fas fa-map-marked-alt mr-2"></i> Go to Map
+                            </a>
                         </div>
+                        <!--Grid column-->
                     </div>
+                    <!--Grid row-->
                 </div>
+                <!-- Content -->
             </div>
+            <!-- Mask & flexbox options-->
         </div>
-        <!-- MEMBERS -->
-        <div class="view jarallax members-page" style="height: 100vh;" data-jarallax-video="https://www.youtube.com/embed/UkeDo1LhUqQ">
-            <div id="nav-members" class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h2 class="my-5 py-5">Our Warriors</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- ALLIES -->
-        <div class="view jarallax allies-page">
-            <div id="nav-allies" class="container">
-                <div class="row">
-                    <div class="col-sm-12 text-center">
-                        <h2 class="my-5 py-5">Our Allies</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="card testimonial-card wow-in mb-4">
-                            <div class="card-up peach-gradient"></div>
-                            <div class="avatar mx-auto white">
-                                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle" alt="woman avatar">
-                            </div>
-                            <div class="card-body">
-                                <h4 class="card-title">FKT Alliance</h4>
-                                <hr>
-                                <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci. <i class="fas fa-quote-right"></i></p><i> - R5</i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="card testimonial-card wow-in mb-4" data-wow-delay="0.1s">
-                            <div class="card-up young-passion-gradient"></div>
-                            <div class="avatar mx-auto white">
-                                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle" alt="woman avatar">
-                            </div>
-                            <div class="card-body">
-                                <h4 class="card-title">RDO Alliance</h4>
-                                <hr>
-                                <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci. <i class="fas fa-quote-right"></i></p><i> - R5</i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="card testimonial-card wow-in mb-4" data-wow-delay="0.2s">
-                            <div class="card-up ripe-malinka-gradient"></div>
-                            <div class="avatar mx-auto white">
-                                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle" alt="woman avatar">
-                            </div>
-                            <div class="card-body">
-                                <h4 class="card-title">1RS Alliance</h4>
-                                <hr>
-                                <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci. <i class="fas fa-quote-right"></i></p><i> - R5</i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="card testimonial-card wow-in mb-4" data-wow-delay="0.3s">
-                            <div class="card-up purple-gradient"></div>
-                            <div class="avatar mx-auto white">
-                                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle" alt="woman avatar">
-                            </div>
-                            <div class="card-body">
-                                <h4 class="card-title">ASH Alliance</h4>
-                                <hr>
-                                <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci. <i class="fas fa-quote-right"></i></p><i> - R5</i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="card testimonial-card wow-in mb-4" data-wow-delay="0.4s">
-                            <div class="card-up blue-gradient"></div>
-                            <div class="avatar mx-auto white">
-                                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle" alt="woman avatar">
-                            </div>
-                            <div class="card-body">
-                                <h4 class="card-title">POW Alliance</h4>
-                                <hr>
-                                <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci. <i class="fas fa-quote-right"></i></p><i> - R5</i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="card testimonial-card wow-in mb-4" data-wow-delay="0.5s">
-                            <div class="card-up aqua-gradient"></div>
-                            <div class="avatar mx-auto white">
-                                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle" alt="woman avatar">
-                            </div>
-                            <div class="card-body">
-                                <h4 class="card-title">BOR Alliance</h4>
-                                <hr>
-                                <p><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci. <i class="fas fa-quote-right"></i></p><i> - R5</i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="spacer-5"></div>
-            </div>
-        </div>
-        <!-- EVENTS -->
-        <div class="view jarallax events-page">
-            <img class="jarallax-img lazyload" data-src="public/img/harvest-bg.jpg" alt="">
-            <div id="nav-events" class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h2 class="my-5 py-5">Our Events</h2>
-                    </div>
-                </div>
-                <div class="row justify-content-md-center">
-                    <div class="col-md-auto">
-                        <div class="card wow-in" data-wow-delay="0.5s">
-                            <h4 class="card-header font-weight-bold h4">Harvest</h4>
-                            <div class="card-body p-5">
-                                <p></p>
-                                <dl class="row">
-                                    <dt class="col-sm-3">Rules</dt>
-                                    <dd class="col-sm-9">You are allowed to harvest resources from Farm Bases you are assigned as given below. Do not attack if durability is under 50%. Harvesting other's farms or harvesting without signing up will have consequences.</dd>
-                                    <dt class="col-sm-3">Dates</dt>
-                                    <dd class="col-sm-9"><u>Alpha Harvest</u> : 2<sup>nd</sup> Week of every month<br><u>Beta Harvest</u> : 4<sup>th</sup> Week of every month</dd>
-                                    <dt class="col-sm-3">Time</dt>
-                                    <dd class="col-sm-9">Monday 00:00 to Friday 23:59, Server time</dd>
-                                    <dt class="col-sm-3">Eligibility</dt>
-                                    <dd class="col-sm-9">You are eligible if you are an PuB Alliance member with base level 16+ and you come under any one of the follow:<ol>
-                                        <li>
-                                            No farm accounts
-                                        </li>
-                                        <li>
-                                            No time for managing farm accounts
-                                        </li>
-                                        <li>
-                                            Unable to manage farm accounts
-                                        </li>
-                                    </ol></dd>
-                                    <dt class="col-sm-3">Legends</dt>
-                                    <dd class="col-sm-9"><i class="fas fa-carrot fa-lg"></i> = Farm Name<br><i class="fas fa-tractor"></i> = Assigned Farmers</dd>
-                                </dl>
-                            </div>
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <div class="d-flex flex-row">
-                                        <div>
-                                            <i class="fas fa-carrot fa-lg mx-3"></i>
-                                        </div>
-                                        <div>
-                                            PuBzFarm001
-                                        </div>
-                                        <div>
-                                            <i class="fas fa-tractor ml-5"></i>
-                                        </div>
-                                        <div>
-                                            <span class="badge badge-dark badge-pill ml-3">ALEX 007</span>
-                                            <span class="badge badge-dark badge-pill ml-3">ALEX 007</span>
-                                            <span class="badge badge-dark badge-pill ml-3">ALEX 007</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="d-flex flex-row">
-                                        <div>
-                                            <i class="fas fa-carrot fa-lg mx-3"></i>
-                                        </div>
-                                        <div>
-                                            PuBzFarm002
-                                        </div>
-                                        <div>
-                                            <i class="fas fa-tractor ml-5"></i>
-                                        </div>
-                                        <div>
-                                            <span class="badge badge-dark badge-pill ml-3">ALEX 007</span>
-                                            <span class="badge badge-dark badge-pill ml-3">ALEX 007</span>
-                                            <span class="badge badge-dark badge-pill ml-3">ALEX 007</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="d-flex flex-row">
-                                        <div>
-                                            <i class="fas fa-carrot fa-lg mx-3"></i>
-                                        </div>
-                                        <div>
-                                            PuBzFarm003
-                                        </div>
-                                        <div>
-                                            <i class="fas fa-tractor ml-5"></i>
-                                        </div>
-                                        <div>
-                                            <span class="badge badge-dark badge-pill ml-3">ALEX 007</span>
-                                            <span class="badge badge-dark badge-pill ml-3">ALEX 007</span>
-                                            <span class="badge badge-dark badge-pill ml-3">ALEX 007</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="d-flex flex-row">
-                                        <div>
-                                            <i class="fas fa-carrot fa-lg mx-3"></i>
-                                        </div>
-                                        <div>
-                                            PuBzFarm004
-                                        </div>
-                                        <div>
-                                            <i class="fas fa-tractor ml-5"></i>
-                                        </div>
-                                        <div>
-                                            <span class="badge badge-dark badge-pill ml-3">ALEX 007</span>
-                                            <span class="badge badge-dark badge-pill ml-3">ALEX 007</span>
-                                            <span class="badge badge-dark badge-pill ml-3">ALEX 007</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="d-flex flex-row">
-                                        <div>
-                                            <i class="fas fa-carrot fa-lg mx-3"></i>
-                                        </div>
-                                        <div>
-                                            PuBzFarm005
-                                        </div>
-                                        <div>
-                                            <i class="fas fa-tractor ml-5"></i>
-                                        </div>
-                                        <div>
-                                            <span class="badge badge-dark badge-pill ml-3">ALEX 007</span>
-                                            <span class="badge badge-dark badge-pill ml-3">ALEX 007</span>
-                                            <span class="badge badge-dark badge-pill ml-3">ALEX 007</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="d-flex flex-row">
-                                        <div>
-                                            <i class="fas fa-carrot fa-lg mx-3"></i>
-                                        </div>
-                                        <div>
-                                            PuBzFarm006
-                                        </div>
-                                        <div>
-                                            <i class="fas fa-tractor ml-5"></i>
-                                        </div>
-                                        <div>
-                                            <span class="badge badge-dark badge-pill ml-3">ALEX 007</span>
-                                            <span class="badge badge-dark badge-pill ml-3">ALEX 007</span>
-                                            <span class="badge badge-dark badge-pill ml-3">ALEX 007</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="d-flex flex-row">
-                                        <div>
-                                            <i class="fas fa-carrot fa-lg mx-3"></i>
-                                        </div>
-                                        <div>
-                                            PuBzFarm007
-                                        </div>
-                                        <div>
-                                            <i class="fas fa-tractor ml-5"></i>
-                                        </div>
-                                        <div>
-                                            <span class="badge badge-dark badge-pill ml-3">ALEX 007</span>
-                                            <span class="badge badge-dark badge-pill ml-3">ALEX 007</span>
-                                            <span class="badge badge-dark badge-pill ml-3">ALEX 007</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="d-flex flex-row">
-                                        <div>
-                                            <i class="fas fa-carrot fa-lg mx-3"></i>
-                                        </div>
-                                        <div>
-                                            PuBzFarm008
-                                        </div>
-                                        <div>
-                                            <i class="fas fa-tractor ml-5"></i>
-                                        </div>
-                                        <div>
-                                            <span class="badge badge-dark badge-pill ml-3">ALEX 007</span>
-                                            <span class="badge badge-dark badge-pill ml-3">ALEX 007</span>
-                                            <span class="badge badge-dark badge-pill ml-3">ALEX 007</span>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="spacer-5"></div>
-            </div>
-        </div>
-        <!-- CONTACT -->
-        <div id="nav-contact" class="container-fluid text-center contact-page" style="height: 100vh;">
-            <div class="row">
-                <div class="col-md-6 mt-md-0 mt-3">
-                    <h5 class="text-uppercase font-weight-bold">Main Alliance</h5>
-                    <p>Alex</p>
-                </div>
-                <hr class="clearfix w-100 d-md-none pb-3">
-                <div class="col-md-6 mb-md-0 mb-3">
-                    <h5 class="text-uppercase font-weight-bold">Sub Alliance</h5>
-                    <p>Darth</p>
-                </div>
-            </div>
-        </div>
-        <footer class="page-footer font-small pt-4">
-            <div class="footer-copyright text-center py-3">© 2019 Copyright:
-                <a href="#">PuB Alliance</a>
-            </div>
-        </footer>
-    </main>
-    <!-- SCRIPTS -->
-    <script type="text/javascript" src="public/js/lazysizes.min.js" async></script>
-    <script type="text/javascript" src="public/js/lazysizes.min.js"></script>
-    <script type="text/javascript" src="public/js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="public/js/popper.min.js"></script>
-    <script type="text/javascript" src="public/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="public/js/mdb.js"></script>
-    <script type="text/javascript" src="public/js/ofi.min.js"></script>
-    <script type="text/javascript" src="public/js/jarallax/jarallax.min.js"></script>
-    <script type="text/javascript" src="public/js/jarallax/jarallax-video.min.js"></script>
-    <script type="text/javascript" src="public/js/jarallax/jarallax-element.min.js"></script>
+        <!-- Full Page Intro -->
+    </header>
+    <!-- Main navigation -->
+    <!--Main Layout-->
+    <!--Main Layout-->
     <script type="text/javascript">
-    $(document).ready(function() {
-        $(".scrollTo").on('click', function(event) {
-            if (this.hash !== "") {
-                event.preventDefault();
-                var hash = this.hash;
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function() {
-                    window.location.hash = hash;
-                });
-            }
-        });
-    });
-    $(document).ready(function() {
-        $("body").attr("aria-busy", !0),
-            $("#preloader-markup").load("public/html/preload.html",
-                function() { $(window).on("load", function() { $("#mdb-preloader").fadeOut("slow"), $("body").removeAttr("aria-busy") }) })
-    });
-    $(".wow-in").addClass("wow fadeIn");
     new WOW().init();
-    objectFitImages();
-    jarallax(document.querySelectorAll('.jarallax'));
-    jarallax(document.querySelectorAll('.jarallax-keep-img'), {
-        keepImg: true,
-    });
     </script>
 </body>
 

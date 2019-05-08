@@ -98,6 +98,14 @@ h2 {
     font-size: 3rem;
 }
 
+a {
+    color: #222;
+}
+
+a:hover {
+    color: #777;
+}
+
 .navbar-brand {
     font-family: 'Cinzel', serif !important;
     letter-spacing: 0.1rem;
@@ -150,15 +158,19 @@ h2 {
 .spacer-1 {
     height: 2rem;
 }
+
 .spacer-2 {
     height: 4rem;
 }
+
 .spacer-3 {
     height: 6rem;
 }
+
 .spacer-4 {
     height: 8rem;
 }
+
 .spacer-5 {
     height: 10rem;
 }
@@ -175,8 +187,50 @@ h2 {
     text-align: left;
 }
 
+.home-page,
+.about-page,
+.members-page,
+.allies-page,
+.event-page,
+.contact-page {
+    min-height: 100vh;
+}
+
+
 .about-page {
     color: #aaa;
+}
+
+.about-page .nav-tabs {
+    border-bottom: none;
+    margin-bottom: 3rem;
+}
+
+.about-page .nav-tabs .nav-link {
+    color: #aaa;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.about-page .nav-tabs .nav-link:hover {
+    color: #fff;
+    border-radius: 5px;
+    text-shadow: 0px 0px 10px #fff box-shadow: 0px 0px 10px 2px #fff;
+    cursor: pointer;
+}
+
+.about-page .nav-tabs .nav-link.active {
+    color: #222;
+    border-radius: 5px;
+}
+
+.about-page .accordion .card,.about-page .accordion a {
+    color: #fff;
+    background-color: #333;
+}
+
+.about-page .accordion .card-header {
+    text-align: left;
 }
 
 .members-page {
@@ -186,6 +240,7 @@ h2 {
 .allies-page {
     color: #aaa;
 }
+
 .allies-page .card {
     color: #000;
 }

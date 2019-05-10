@@ -524,7 +524,6 @@
     </main>
     <!-- SCRIPTS -->
     <script type="text/javascript" src="public/js/lazysizes.min.js" async></script>
-    <script type="text/javascript" src="public/js/lazysizes.min.js"></script>
     <script type="text/javascript" src="public/js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="public/js/popper.min.js"></script>
     <script type="text/javascript" src="public/js/bootstrap.min.js"></script>
@@ -544,20 +543,23 @@
                 }, 800, function() {
                     window.location.hash = hash;
                 });
-            }
+            };
+            $('#navbarSupportedContent').collapse('hide');
         });
-    });
-    $(document).ready(function() {
         $("body").attr("aria-busy", !0),
-            $("#preloader-markup").load("public/html/preload.html",
-                function() { $(window).on("load", function() { $("#mdb-preloader").fadeOut("slow"), $("body").removeAttr("aria-busy") }) })
-    });
-    $(".wow-in").addClass("wow fadeIn");
-    new WOW().init();
-    objectFitImages();
-    jarallax(document.querySelectorAll('.jarallax'));
-    jarallax(document.querySelectorAll('.jarallax-keep-img'), {
-        keepImg: true,
+            $("#preloader-markup").load("./public/html/preload.html",
+                function() {
+                    $(window).on("load", function() {
+                        $("#mdb-preloader").fadeOut("slow"), $("body").removeAttr("aria-busy")
+                    })
+                });
+        $(".wow-in").addClass("wow fadeIn");
+        new WOW().init();
+        objectFitImages();
+        jarallax(document.querySelectorAll('.jarallax'));
+        jarallax(document.querySelectorAll('.jarallax-keep-img'), {
+            keepImg: true,
+        });
     });
     </script>
 </body>
